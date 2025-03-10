@@ -6,7 +6,7 @@ thousands of users simulataneously with very minimal resource usage.
 ## Features
 - Supports thousands of users all connected to single group
 - Very minimal RAM usage with just 3 threads handling the whole thing
-- Uses file descriptor IO to build a persistent queue for all the messages
+- Uses Socket IO to build a `poll`able queue for all the messages
 - Demonstrates the power of `poll` syscall with raw linux file descriptors to
   ensure CPU usage is kept at minimum
 - Demonstrates building a performant network application with just the standard
